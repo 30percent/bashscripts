@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source filefunctions.sh
+
+main () {
+	chooseFoo top_
+}
+
+main
+
