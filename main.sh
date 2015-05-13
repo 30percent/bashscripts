@@ -1,7 +1,10 @@
 #!/bin/bash
+shopt -s nullglob
+shopt -s extglob
+oldIFS=$IFS
+IFS=" "
 
 source filefunctions.sh
-source allsfunc.sh
 
 main () {
 	chooseFoo top_
@@ -9,3 +12,4 @@ main () {
 
 main
 
+IFS=$oldIFS
